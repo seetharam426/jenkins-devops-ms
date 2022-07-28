@@ -6,6 +6,6 @@ node {
 		echo "Test"
 	}
 	stage('deploy') {
-	echo "Integration test"
+	echo "Integration test latest"
 	}
 }
