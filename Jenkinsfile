@@ -1,4 +1,4 @@
-node {
+/* node {
 	stage('Build') {
 		echo "Build"
 	}
@@ -8,4 +8,18 @@ node {
 	stage('deploy') {
 	echo "Integration test latest 4"
 	}
+} */
+
+pipeline {
+agent any
+stages { 
+stage('build') {
+echo "Build success"
 }
+post {
+always {
+echo "pass build success"
+}
+}
+
+
