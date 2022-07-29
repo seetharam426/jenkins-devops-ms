@@ -14,7 +14,7 @@ pipeline {
 	agent any
 	stages { 
 		stage('build') {
-		echo "Build success"
+			echo "Build success"
 		}
 		post {
 			always {
