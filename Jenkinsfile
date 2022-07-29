@@ -11,7 +11,7 @@
 
     stage("This is stage 2") {
       steps {
-      echo "this is stage 2"
+      echo "this is stage 2 and updated with new version"
         // Cool stuff goes here!
       }
     }
