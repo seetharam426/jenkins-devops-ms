@@ -11,15 +11,17 @@
 } */
 
 pipeline {
-agent any
-stages { 
-stage('build') {
-echo "Build success"
-}
-post {
-always {
-echo "pass build success"
-}
+	agent any
+	stages { 
+		stage('build') {
+		echo "Build success"
+		}
+		post {
+			always {
+				echo "pass build success"
+			}
+		}
+	}
 }
 
 
